@@ -1,0 +1,97 @@
+#lyra-resume {
+  --resume-text: #1a1a1a;
+  --resume-muted: #666666;
+  --resume-muted-light: #434343;
+  --resume-accent: #0563c1;
+  --resume-rule: #000000;
+
+  color: var(--resume-text);
+  max-width: 8.5in;
+  margin: 0 auto;
+  padding: 0 1in 1in;
+  border: 1px solid var(--resume-rule);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+}
+
+#lyra-resume * {
+  box-sizing: border-box;
+}
+
+#lyra-resume .resume__section-title {
+  border-bottom: 1px solid var(--resume-rule);
+  padding-bottom: 2px;
+  margin-top: 22px;
+  margin-bottom: 10px;
+}
+
+
+#lyra-resume .resume__entry {
+  margin-bottom: 14px;
+}
+
+#lyra-resume .resume__entry-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  font-weight: bold;
+}
+
+#lyra-resume .resume__entry-header .resume__location {
+  font-weight: bold;
+}
+
+#lyra-resume .resume__role-line {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  font-style: italic;
+  margin-top: 1px;
+}
+
+#lyra-resume .resume__role-line .resume__dates {
+  font-style: italic;
+}
+
+#lyra-resume .resume__bullets {
+  margin: 4px 0 0 0;
+  padding-left: 20px;
+}
+
+#lyra-resume .resume__bullets li {
+  color: var(--resume-muted);
+  margin-bottom: 3px;
+}
+
+
+#lyra-resume .resume__edu-entry {
+  margin-bottom: 10px;
+}
+
+#lyra-resume .resume__edu-header {
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+}
+
+#lyra-resume .resume__edu-degree-line {
+  display: flex;
+  justify-content: space-between;
+  font-style: italic;
+  color: var(--resume-muted-light);
+}
+
+#lyra-resume .resume__skills-list {
+  padding-left: 20px;
+  margin-top: 4px;
+}
+
+#lyra-resume .resume__skills-list li {
+  color: var(--resume-text);
+}
+
+@media print {
+  #lyra-resume {
+    padding: 0.5in;
+  }
+}
